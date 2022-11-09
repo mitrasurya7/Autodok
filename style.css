@@ -1,0 +1,172 @@
+.table{
+    margin: 0;
+}
+h3{ 
+    float: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    width: bold;
+    text-align: center;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    /* color: rgb(0, 0, 0); */
+    width: bold;
+    color: rgb(21, 21, 21);
+    text-align: center;
+}
+h1{ 
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    width: bold;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+}   
+input[type=text] {
+    width: 75%;
+    padding: 12px 60px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-bottom: 0;
+  } 
+.full-box{
+    background-image: url("./images/bg.jpg");
+    size: 100%;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+}
+.tempat{
+    width: 799px;
+    background-color: rgba(209, 252, 206, 0.658);
+    padding:0px;
+    margin: 50px auto;
+    text-align: left;
+}
+#kiri-box{
+    width: 500px;
+    height: 800px;
+    float: right;
+    margin-right: 0;
+    background-color: rgba(225, 224, 224, 0.896);
+    padding: 5px;
+    border-right: 0px;
+    /* border: 1px solid; */
+    border-left: none ;
+    border-radius: 0px 15px 15px 0px;
+    
+}
+#kanan-box{
+    margin-left: 0;
+    float:left;
+    width: 275px;
+    height: 800px;
+    background-color:rgba(125, 228, 56, 0.869) ;   
+    padding: 5px;
+    border-radius: 15px 0px 0px 15px;
+    text-align: left;
+}
+
+img{
+    width: 100px;
+    align-content: center;
+}
+.logo-title{
+    /* border: 1px solid; */
+    text-align: center;
+    
+}
+.logo-title img {
+    width: 25%;
+    height: auto;
+    
+  }
+.container-box table{
+    width: 50%;
+    margin: auto;
+    padding: auto;
+}
+
+.kekiri{
+    float: left;
+}
+.inputan {
+    /* border: 1px solid;    */
+    text-align: left;
+}
+.button{
+    background-color: rgba(102, 231, 15, 0.869) ;
+      border: 1px solid;
+      color: white;
+      padding: 10px auto;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      width : 150px;
+      height: 40px;
+      font-family: 'Poppins', sans-serif;
+      color: bisque;
+      margin: auto;
+      margin-top: 15px;
+      border-radius: 5px;
+      position: relative;
+      left: 35%;
+}
+.buttonDok{
+    background-color: rgba(239, 242, 237, 0.869) ;
+          border: 1px solid;
+          color: rgb(0, 0, 0);
+          padding: 10px auto;
+          text-align: center;
+          display: inline-block;
+          font-size: 16px;
+          cursor: pointer;
+          width : 150px;
+          height: 40px;
+          font-family: 'Poppins', sans-serif;
+          margin: auto;
+          margin-top: 15px;
+          border-radius: 5px;
+          position: relative;
+          left: 35%;
+                  
+    }
+    .buttonDok:hover{
+        background-color:  rgba(102, 231, 15, 0.869);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+      
+      }
+    .button:hover{
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+    
+    }
+    #tombol-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 120px;
+
+    }
+
+    #tombol-box button{
+        text-align: center;
+        position: relative;
+        right: 50%;
+
+    }
+    .kanan-box{
+        text-align: center;
+        padding: 25px;
+        padding-top: 5px;
+        margin-left: 15px;
+    }
+    .kanan-box td{
+        background-color: bisque;
+        padding: 10px
+    }
