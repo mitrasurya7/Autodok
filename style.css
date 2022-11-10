@@ -24,17 +24,19 @@ p{
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
 }   
+
 input[type=text] {
     width: 75%;
     padding: 12px 60px;
-    margin: 5px 0;
+    margin: 5px 0px;
     border-radius: 5px;
     border: 1px solid;
     margin-bottom: 0;
   } 
+  
 .full-box{
-    background-image: url("./images/bg.jpg");
-    size: 100%;
+    background-image: url("./images/bg3.jpg");
+    background-size: 100%;
     /* background-position: center; */
     /* background-repeat: no-repeat; */
 }
@@ -63,7 +65,7 @@ input[type=text] {
     float:left;
     width: 275px;
     height: 800px;
-    background-color:rgba(125, 228, 56, 0.869) ;   
+    background-color:#749F82 ;   
     padding: 5px;
     border-radius: 15px 0px 0px 15px;
     text-align: left;
@@ -97,9 +99,9 @@ img{
     text-align: left;
 }
 .button{
-    background-color: rgba(102, 231, 15, 0.869) ;
+    background-color: #749F82 ;
       border: 1px solid;
-      color: white;
+      color: #ffffff;
       padding: 10px auto;
       text-align: center;
       display: inline-block;
@@ -108,7 +110,7 @@ img{
       width : 150px;
       height: 40px;
       font-family: 'Poppins', sans-serif;
-      color: bisque;
+      color: #ffffff;
       margin: auto;
       margin-top: 15px;
       border-radius: 5px;
@@ -127,15 +129,15 @@ img{
           width : 150px;
           height: 40px;
           font-family: 'Poppins', sans-serif;
-          margin: auto;
-          margin-top: 15px;
+          /* margin: auto; */
+          margin-top: 3px;
           border-radius: 5px;
           position: relative;
           left: 35%;
                   
     }
     .buttonDok:hover{
-        background-color:  rgba(102, 231, 15, 0.869);
+        background-color:  #749F82;
         color: rgb(255, 255, 255);
         font-weight: bold;
       
@@ -167,6 +169,6 @@ img{
         margin-left: 15px;
     }
     .kanan-box td{
-        background-color: bisque;
+        background-color: #FFFAD7;
         padding: 10px
     }

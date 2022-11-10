@@ -1,95 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-<link rel="icon"href="./images/logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/logo.png">
     <title>Autodok</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="full-box">
     <div class="tempat">
-    <div id="kiri-box">
-    <div class="logo-title">
-    <img src="./images/logoheader.jpg">
-    <img src="./images/pngwing.com.png" style="align-items: flex-end;">
-    <h1>Autodok</h1> 
+        <div id="kiri-box">
+            <div class="logo-title">
+                <img src="./images/logo.png">
+                <img src="./images/pngwing.com.png" style="align-items: flex-end;">
+                <h1>Autodok</h1>
+            </div>
+            <h3>
+                <p>Cek Kesehatan Anda secara Mandiri</p>
+            </h3>
+            <div class="inputan">
+                <table class="table">
+                    <tr>
+                        <td>
+                            <p style="text-align: center" ;><label>Nama </label>
+                        </td>
+                        <td><input type="text" placeholder="Masukan nama anda"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="text-align: center" ;><label>Usia </label></p>
+                        </td>
+                        <td><input type="text" placeholder="Masukan usia anda"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><label>Berat Badan</label></p>
+                        </td>
+                        <td><input type="text" placeholder="Berat Badan" style="padding: 12px 20px;"> Kg</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><label>Tinggi Badan</label></p>
+                        </td>
+                        <td><input type="text" placeholder="Tinggi Badan" style="padding: 12px 20px;"> Cm</p>
+                        </td>
+                    </tr>
+                </table>
+                <h3> Silahkan pilih Gejala yang anda Rasakan</h3>
+                <p><input type="checkbox" id="Lemas" name="Lemas" value="Lemas">
+                    <label for="Lemas">Lemas</label>
+                    <input type="checkbox" id="Sesak Nafas" name="Sesak Nafas" value="Sesak nafas">
+                    <label for="Sesak nafas">Sesak Nafas</label>
+                    <input type="checkbox" id="Ngilu" name="Ngilu" value="Ngilu">
+                    <label for="Ngilu">Ngilu</label>
+                    <input type="checkbox" id="demam" name="demam" value="Ngilu">
+                    <label for="tidak enak badan1">Demam</label>
+                    <input type="checkbox" id="mual" name="mual" value="Ngilu">
+                    <label for="tidak enak badan1">Mual</label><br>
+                    <input type="checkbox" id="diare" name="diare" value="Ngilu">
+                    <label for="tidak enak badan1">Diare</label>
+                    <input type="checkbox" id="Nyeri Otot" name="Nyeri Otot" value="Ngilu">
+                    <label for="Nyeri Otot1">Nyeri Otot</label>
+                    <input type="checkbox" id="Bantuk Kering" name="Bantuk Kering" value="Ngilu">
+                    <label for="Bantuk Kering1">Bantuk Kering</label><br>
+                    <input type="checkbox" id="gangguan pernafasan akut" name="gangguan pernafasan akut" value="Ngilu">
+                    <label for="tidak enak badan1">Gangguan pernafasan akut</label><br>
+                    <input type="checkbox" id="tidak enak badan" name="tidak enak badan" value="Ngilu">
+                    <label for="tidak enak badan1">Tidak nafsu makan</label>
+                    <input type="checkbox" id="tidak enak badan" name="tidak enak badan" value="Ngilu">
+                    <label for="tidak enak badan1">Sakit bagian</label>
+                    <input type="checkbox" id="cairan di paru-paru" name="cairan di paru-paru" value="Ngilu">
+                    <label for="tidak enak badan1">Cairan di paru-paru</label><br></p>
+                <p><button type="button" id="reset" value="reset" class="button">Periksa</button></p>
+            </div>
+        </div>
+        <div id="kanan-box">
+            <h2><u>Autodok</u></h2>
+            <p style="align-items:center ;">Autodock adalah sebuah miniatur program, dimana dalam program ini kita dapat
+                melakukan cek medis secara mandiri</p>
+            <p>Program ini di Desain agar kita mampu mendeteksi sedari dini, penyakit yang kita Derita dan cara
+                penganganan secara cepat dan efektif</p>
+            <table class="kanan-box">
+                <tr>
+                    <th>
+                        <h3>Hasil Diagnosa Kami</h3>
+                    </th>
+                </tr>
+                <td>
+                    <h3>Flu Berat</h3>
+                </td>
+            </table>
+            <table class="kanan-box">
+                <tr>
+                    <th>
+                        <h3>Resep Rekomendasi</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Kunyit Merah direbus</h>
+                    </td>
+                </tr>
+            </table>
+            <div id="tombol-box">
+                <button type="button" id="reset" value="reset" class="buttonDok">Hubungi Dokter</button>
+                <!-- <button type="button" id="reset" value="reset" class="button">Periksa</button> -->
+            </div>
+        </div>
     </div>
-    <h3><p>Cek Kesehatan Anda secara Mandiri</p></h3>
-    <div class="inputan">
-<table class="table">
-    <tr>
-    <td><p style="text-align: center";><label>Nama  </label></td>
-    <td><input type ="text" placeholder="Masukan nama anda"></p></td>
-    </tr>
-    <tr>
-    <td><p style="text-align: center";><label>Usia </label></p></td>
-    <td><input type ="text" placeholder="Masukan usia anda"></p></td>
-    </tr>
-    <tr>
-    <td><p><label>Berat Badan</label></p></td>
-    <td><input type="text" placeholder="Berat Badan" style="padding: 12px 20px;"> Kg</td>
-    </tr>
-    <tr>
-    <td><p><label>Tinggi Badan</label></p></td>
-    <td><input type="text"placeholder="Tinggi Badan" style="padding: 12px 20px;"> Cm</p></td>
-    </tr>
-</table>
-    <h3> Silahkan pilih Gejala yang anda Rasakan</h3>
-    <p><input type="checkbox" id="Lemas" name="Lemas" value="Lemas">
-    <label for="Lemas">Lemas</label>
-    <input type="checkbox" id="Sesak Nafas" name="Sesak Nafas" value="Sesak nafas">
-    <label for="Sesak nafas">Sesak Nafas</label>
-    <input type="checkbox" id="Ngilu" name="Ngilu" value="Ngilu"> 
-    <label for="Ngilu">Ngilu</label>
-    <input type="checkbox" id="demam" name="demam" value="Ngilu"> 
-    <label for="tidak enak badan1">Demam</label>
-    <input type="checkbox" id="mual" name="mual" value="Ngilu"> 
-    <label for="tidak enak badan1">mual</label><br>
-    <input type="checkbox" id="diare" name="diare" value="Ngilu"> 
-    <label for="tidak enak badan1">Diare</label>
-    <input type="checkbox" id="Nyeri Otot" name="Nyeri Otot" value="Ngilu"> 
-    <label for="Nyeri Otot1">Nyeri Otot</label>
-    <input type="checkbox" id="Bantuk Kering" name="Bantuk Kering" value="Ngilu"> 
-    <label for="Bantuk Kering1">Bantuk Kering</label><br>
-    <input type="checkbox" id="gangguan pernafasan akut" name="gangguan pernafasan akut" value="Ngilu"> 
-    <label for="tidak enak badan1">gangguan pernafasan akut</label><br>
-    <input type="checkbox" id="tidak enak badan" name="tidak enak badan" value="Ngilu"> 
-    <label for="tidak enak badan1">tidak nafsu makan</label>
-    <input type="checkbox" id="tidak enak badan" name="tidak enak badan" value="Ngilu"> 
-    <label for="tidak enak badan1">sakit bagian</label>
-    <input type="checkbox" id="cairan di paru-paru" name="cairan di paru-paru" value="Ngilu"> 
-    <label for="tidak enak badan1">cairan di paru-paru</label><br></p>
-    <p><button type="button" id="reset" value="reset" class="button">Periksa</button></p>
-</div>
-    </div>
-    <div id="kanan-box">
-        <h2><u>Autodok</u></h2>
-        <p style="align-items:center ;">Autodock adalah sebuah miniatur program, dimana dalam program ini kita dapat melakukan cek medis secara mandiri</p>
-    <p>Program ini di Desain agar kita mampu mendeteksi sedari dini, penyakit yang kita Derita dan cara penganganan secara cepat dan efektif</p>
-<table class="kanan-box">
-    <tr>
-        <th><h3>Hasil Diagnosa Kami</h3></th>
-    </tr>
-    <td><h3>Flu Berat</h3></td>
-</table>
-<table class="kanan-box">
-    <tr>
-        <th><h3>Resep Rekomendasi</h3></th>
-    </tr>
-    <tr>
-        <td><h3>Kunyit Merah direbus</h></td>
-    </tr>
-</table>
-<div id="tombol-box">
-    <button type="button" id="reset" value="reset" class="buttonDok">Hubungi Dokter</button>
-        <!-- <button type="button" id="reset" value="reset" class="button">Periksa</button> -->
-    </div>
- </div>
-</div>
 </body>
+
 </html>
