@@ -83,6 +83,8 @@ function gejalaPenyakit(listGejala,database){
         // gejalaCounter.push([penyakit, calculateSameMember(listGejala,database[penyakit].gejala)]) 
         gejalaCounter[penyakit] = calculateSameMember(listGejala,database[penyakit].gejala)
     }
+
+    console.log(gejalaCounter)
     
     let max = -Infinity;
     let sameValue = 0;
@@ -98,9 +100,22 @@ function gejalaPenyakit(listGejala,database){
     if(sameValue !== max){
         return siPenyakit
     }
+
+    var penyakitList = []
+    if (gejalaCounter.flu > 0) {
+        penyakitList.push('flu')
+    }
+    if (gejalaCounter.disentri > 0 ) {
+        penyakitList.push('disentri')
+    }
+    if (gejalaCounter.asma > 0) {
+        penyakitList.push('asma')
+    }
+
     console.log(siPenyakit)
     console.log(gejalaCounter)
-    return 'Harap kunjungi dokter' 
+    console.log(penyakitList)
+    return penyakitList 
 }
 
 function showUs(){
@@ -147,14 +162,22 @@ function showUs(){
     
     let diagnosisPenyakit = gejalaPenyakit(listGejala, masterDataPenyakit)
     console.log(diagnosisPenyakit) // Penyakit yang diderita
-
+    // console.log(typeof(diagnosisPenyakit))
     let hasilDiagnosa;
     let resep;
     if(!diagnosisPenyakit){
         hasilDiagnosa = 'Anda baik-baik saja.'
         resep = 'Jaga kesehatan'
-    } else if(diagnosisPenyakit === 'Harap kunjungi dokter'){
-        hasilDiagnosa = 'Anda menderita komplikasi'
+    } else if(typeof(diagnosisPenyakit) === 'object'){
+        var tempMsg = ''
+        for (let i = 0; i < diagnosisPenyakit.length; i++) {
+            tempMsg += diagnosisPenyakit[i]
+            if (i < diagnosisPenyakit.length-1) {
+                tempMsg += ' atau '
+            }
+        }
+        console.log(tempMsg)
+        hasilDiagnosa = 'Anda kemungkinan menderita ' + tempMsg
         resep = 'Silahkan kunjungi dokter'
     } else if(diagnosisPenyakit === 'Sangat Penyakitan'){
         hasilDiagnosa = 'Anda sangat menderita'
