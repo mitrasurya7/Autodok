@@ -1,96 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="icon"href="./images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/logo.png">
     <title>Autodok</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="full-box">
     <div class="tempat">
-    <div id="kiri-box">
-    <div class="logo-title">
-    <img src="./images/logoheader.jpg">
-    <img src="./images/pngwing.com.png" style="align-items: flex-end;">
-    <h1>Autodok</h1> 
-    </div>
-    <h3><p>Cek Kesehatan Anda secara Mandiri</p></h3>
-    <div class="inputan">
-<table class="table">
-    <tr>
-    <td><p style="text-align: center";><label>Nama  </label></td>
-    <td><input type ="text" placeholder="Masukan nama anda" id="namaPasien"></p></td>
-    </tr>
-    <tr>
-    <td><p style="text-align: center";><label>Usia </label></p></td>
-    <td><input type ="text" placeholder="Masukan usia anda" id="usiaPasien"></p></td>
-    </tr>
-    <tr>
-    <td><p><label>Berat Badan</label></p></td>
-    <td><input type="text" placeholder="Berat Badan" style="padding: 12px 20px;" id="beratBadan"> Kg</td>
-    </tr>
-    <tr>
-    <td><p><label>Tinggi Badan</label></p></td>
-    <td><input type="text"placeholder="Tinggi Badan" style="padding: 12px 20px;" id="tinggiBadan"> Cm</p></td>
-    </tr>
-</table>
-    <h3> Silahkan pilih Gejala yang anda Rasakan</h3>
-    <p><input type="checkbox" id="Lemas" name="Lemas" value="lemas" class="gejala">
-    <label for="Lemas">Lemas</label>
-    <input type="checkbox" id="Sesak Nafas" name="Sesak Nafas" value="sesak nafas" class="gejala">
-    <label for="Sesak nafas">Sesak Nafas</label>
-    <input type="checkbox" id="Ngilu" name="Ngilu" value="ngilu" class="gejala"> 
-    <label for="Ngilu">Ngilu</label>
-    <input type="checkbox" id="demam" name="demam" value="demam" class="gejala"> 
-    <label for="tidak enak badan1">Demam</label>
-    <input type="checkbox" id="mual" name="mual" value="mual" class="gejala"> 
-    <label for="tidak enak badan1">Mual</label><br>
-    <input type="checkbox" id="diare" name="diare" value="diare" class="gejala"> 
-    <label for="tidak enak badan1">Diare</label>
-    <input type="checkbox" id="Nyeri Otot" name="Nyeri Otot" value="nyeri otot" class="gejala"> 
-    <label for="Nyeri Otot1">Nyeri Otot</label>
-    <input type="checkbox" id="Batuk berdahak" name="Batuk berdahak" value="batuk berdahak" class="gejala"> 
-    <label for="Bantuk Kering1">Batuk berdahak</label><br>
-    <input type="checkbox" id="gangguan pernafasan akut" name="gangguan pernafasan akut" value="gangguan pernafasan akut" class="gejala"> 
-    <label for="tidak enak badan1">Gangguan pernafasan akut</label><br>
-    <input type="checkbox" id="tidak enak badan" name="tidak enak badan" value="tidak enak badan" class="gejala"> 
-    <label for="tidak enak badan1">Tidak enak badan</label>
-    <input type="checkbox" id="tidak nafsu makan" name="tidak nafsu makan" value="tidak nafsu makan" class="gejala"> 
-    <label for="tidak enak badan1">Tidak nafsu makan</label>
-    <input type="checkbox" id="hidung tersumbat" name="hidung tersumbat" value="hidung tersumbat" class="gejala"> 
-    <label for="tidak enak badan1">Hidung tersumbat</label><br></p>
-    <p><button type="button" id="reset" value="reset" class="button" onclick="showUs()">Periksa</button></p>
-</div>
-    </div>
-    <div id="kanan-box">
-        <h2><u>Autodok</u></h2>
-        <p style="align-items:center ;">Autodock adalah sebuah miniatur program, dimana dalam program ini kita dapat melakukan cek medis secara mandiri</p>
-    <p>Program ini di Desain agar kita mampu mendeteksi sedari dini, penyakit yang kita Derita dan cara penganganan secara cepat dan efektif</p>
-<table class="kanan-box">
-    <tr>
-        <th><h3>Hasil Diagnosa Kami</h3></th>
-    </tr>
-    <td><h3 id="penyakit">Flu Berat</h3></td>
-</table>
-<table class="kanan-box">
-    <tr>
-        <th><h3>Resep Rekomendasi</h3></th>
-    </tr>
-    <tr>
-        <td><h3 id="resep">Kunyit Merah direbus</h></td>
-    </tr>
-</table>
-<div id="tombol-box">
-    <button type="button" id="reset" value="reset" class="buttonDok">Hubungi Dokter</button>
-        <!-- <button type="button" id="reset" value="reset" class="button">Periksa</button> -->
+        <div id="kiri-box">
+            <div class="logo-title">
+                <img src="./images/logo.png">
+                <img src="./images/pngwing.com.png" style="align-items: flex-end;">
+                <h1>Autodok</h1>
+            </div>
+            <h3>
+                <p>Cek Kesehatan Anda secara Mandiri</p>
+            </h3>
+            <div class="inputan">
+                <table class="table">
+                    <tr>
+                        <td>
+                            <p style="text-align: center" ;><label>Nama </label>
+                        </td>
+                        <td><input type="text" placeholder="Masukan nama anda" id="namaPasien"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="text-align: center" ;><label>Usia </label></p>
+                        </td>
+                        <td><input type="text" placeholder="Masukan usia anda"  id="usiaPasien"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><label>Berat Badan</label></p>
+                        </td>
+                        <td><input type="text" placeholder="Berat Badan" style="padding: 12px 20px;" id="beratBadan"> Kg</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><label>Tinggi Badan</label></p>
+                        </td>
+                        <td><input type="text" placeholder="Tinggi Badan" style="padding: 12px 20px;"  id="tinggiBadan"> Cm</p>
+                        </td>
+                    </tr>
+                </table>
+                <h3> Silahkan pilih Gejala yang anda Rasakan</h3>
+                <p><input type="checkbox" id="Lemas" name="Lemas" value="lemas" class="gejala">
+                    <label for="Lemas">Lemas</label>
+                    <input type="checkbox" id="Sesak Nafas" name="Sesak Nafas" value="sesak nafas" class="gejala">
+                    <label for="Sesak nafas">Sesak Nafas</label>
+                    <input type="checkbox" id="Ngilu" name="Ngilu" value="ngilu" class="gejala"> 
+                    <label for="Ngilu">Ngilu</label>
+                    <input type="checkbox" id="demam" name="demam" value="demam" class="gejala"> 
+                    <label for="tidak enak badan1">Demam</label>
+                    <input type="checkbox" id="mual" name="mual" value="mual" class="gejala"> 
+                    <label for="tidak enak badan1">Mual</label><br>
+                    <input type="checkbox" id="diare" name="diare" value="diare" class="gejala"> 
+                    <label for="tidak enak badan1">Diare</label>
+                    <input type="checkbox" id="Nyeri Otot" name="Nyeri Otot" value="nyeri otot" class="gejala"> 
+                    <label for="Nyeri Otot1">Nyeri Otot</label>
+                    <input type="checkbox" id="Batuk berdahak" name="Batuk berdahak" value="batuk berdahak" class="gejala"> 
+                    <label for="Bantuk Kering1">Batuk berdahak</label><br>
+                    <input type="checkbox" id="gangguan pernafasan akut" name="gangguan pernafasan akut" value="gangguan pernafasan akut" class="gejala"> 
+                    <label for="tidak enak badan1">Gangguan pernafasan akut</label><br>
+                    <input type="checkbox" id="tidak enak badan" name="tidak enak badan" value="tidak enak badan" class="gejala"> 
+                    <label for="tidak enak badan1">Tidak enak badan</label>
+                    <input type="checkbox" id="tidak nafsu makan" name="tidak nafsu makan" value="tidak nafsu makan" class="gejala"> 
+                    <label for="tidak enak badan1">Tidak nafsu makan</label>
+                    <input type="checkbox" id="hidung tersumbat" name="hidung tersumbat" value="hidung tersumbat" class="gejala"> 
+                    <label for="tidak enak badan1">Hidung tersumbat</label><br></p>
+                    <p><button type="button" id="reset" value="reset" class="button" onclick="showUs()">Periksa</button></p>
+            </div>
+        </div>
+        <div id="kanan-box">
+            <h2><u>Autodok</u></h2>
+            <p style="align-items:center ;">Autodock adalah sebuah miniatur program, dimana dalam program ini kita dapat
+                melakukan cek medis secara mandiri</p>
+            <p>Program ini di Desain agar kita mampu mendeteksi sedari dini, penyakit yang kita Derita dan cara
+                penganganan secara cepat dan efektif</p>
+            <table class="kanan-box">
+                <tr>
+                    <th>
+                        <h3>Hasil Diagnosa Kami</h3>
+                    </th>
+                </tr>
+                <td>
+                    <h3  id="penyakit">Flu Berat</h3>
+                </td>
+            </table>
+            <table class="kanan-box">
+                <tr>
+                    <th>
+                        <h3>Resep Rekomendasi</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <h3 id="resep" >Kunyit Merah direbus</h>
+                    </td>
+                </tr>
+            </table>
+            <div id="tombol-box">
+                <!-- <button type="button" id="reset" value="reset" class="buttonDok"><a href="#aja" >Hubungi Dokter</a></button> -->
+                <button type="button" id="reset" value="reset" class="buttonDok">Hubungi Dokter</button>
+                <!-- <button type="button" id="reset" value="reset" class="button">Periksa</button> -->
+            </div>
+        </div>
     </div>
  </div>
+    <!-- Halaman 2 bos... jangan nanya2 -->
+</body>
+<body>
+<!-- <div class="selamat"> 
+    <h3>selamat datang rudy</h3>
+</div>-->
+<div>
+    <div class="pembuka">
+      <div class="perbaikan" >
+        asiap
+      </div>
+        <nav class="artikel">
+            <div class="keterangan">
+                <p style="text-align:center ;"><h1 id="nameDatang">Selamat datang Budiman</h1></p>
+                <div class="umur" id="umurHalo"><p>umur : 12 tahun</p></div>
+                <div class="bin"><p style="text-align:center ;" id="bmi">Selamat BMI anda Normal</p></div>
+                <div class="form">
+                    <p>
+                        <table border="1"width = "80%" style="background-color: white; border: 2px solid; padding: 5px; ">
+                            <tr style="border:1px solid;;">
+                              <th>No</th>
+                              <th>Dokter</th>
+                              <th >Jam</th>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>DR Coky</td>
+                              <td>09.00-10.00</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>DR tretan</td>
+                              <td>14.00-15.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <button class="button" type="button" id="reset">batalkan janji </button>
+                                </td>
+                            </tr>
+                          </table>
+                        
+                          
+                    </p>
+                </div>
+            </div>
+            <div class="foto">
+                <div class="dokter">
+                    <div class="doksatu">
+                        <a><img src="images/coki.jpg"/></a>
+                        <p>DR. Coki sangat berpengalaman mengatasi gangguan anda, Sangat berpengalaman dalam mengobati hewan anjing, kuda, kucing dan lainnya</p>
+                        <div class="cekbok">
+                            <ul class="asiap">
+                                <li>
+                                    <select name="jam" id="jambu">
+                                        <option value="jam1">09.00-10.00</option>
+                                        <option value="jam2">14.00-15.00</option>
+                                      </select>
+                                </li>
+                                <li><button type="button" id="reset" value="reset" class="button">Janji Dokter</button></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="dokdua">
+                        <a><img src="images/dusin.jpg"/></a>
+                        <p>DR Dustin memiliki Sepesialis dalam penanganan masalah rumah tangga dengan keahlian yg sangat signifikan dia mampu menambah masalah tanpa Solusi</p>
+                        <div class="cekbokdua">
+                            <ul class="apaantuh">
+                                <li>
+                                    <select name="jam" id="jambu">
+                                        <option value="jam1">09.00-10.00</option>
+                                        <option value="jam2">14.00-15.00</option>
+                                      </select>
+                                </li>
+                                <li>
+                                    <button type="button" id="reset" value="reset" class="button">Janji Dokter</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+                <div class="perawat">
+                    <div class="persatu">
+                        <img src="images/tretan.jpg" />
+                        <p>Dr Tretan memiliki kemampuan spesialis dalam menangani kegalauan anda dan kegelisahan anda dalam urusan dunia, maka tertawalah</p>
+                        <div class="cekboktiga">
+                            <ul class="asek">
+                                <li>
+                                    <select name="jam" id="jambu">
+                                        <option value="jam1">09.00-10.00</option>
+                                        <option value="jam2">14.00-15.00</option>
+                                      </select>
+                                </li>
+                                <li><button type="button" id="reset" value="reset" class="button">Janji Dokter</button></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="perdua">
+                        <img src="images/bbjs.jpg"/>
+                        <p> BPJS kesehatan adalah jasa layanan faskes yang mampu membuat anda lebih aman dalam menjalani kehidupan. Hubungi Faskes anda </p>
+                        <div class="cekbokempat">
+                            <ul class="kamunanyak">
+                                <li>
+                                    <select name="jam" id="jambu">
+                                        <option value="jam1">09.00-10.00</option>
+                                        <option value="jam2">14.00-15.00</option>
+                                      </select>
+                                </li>
+                                <li><button type="button" id="reset" value="reset" class="button">faskes Anda</button></li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </nav>
+    </div>
 </div>
 <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
