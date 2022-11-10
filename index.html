@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-<link rel="icon"href="./images/logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon"href="./images/logo.png">
     <title>Autodok</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,47 +24,47 @@
 <table class="table">
     <tr>
     <td><p style="text-align: center";><label>Nama  </label></td>
-    <td><input type ="text" placeholder="Masukan nama anda"></p></td>
+    <td><input type ="text" placeholder="Masukan nama anda" id="namaPasien"></p></td>
     </tr>
     <tr>
     <td><p style="text-align: center";><label>Usia </label></p></td>
-    <td><input type ="text" placeholder="Masukan usia anda"></p></td>
+    <td><input type ="text" placeholder="Masukan usia anda" id="usiaPasien"></p></td>
     </tr>
     <tr>
     <td><p><label>Berat Badan</label></p></td>
-    <td><input type="text" placeholder="Berat Badan" style="padding: 12px 20px;"> Kg</td>
+    <td><input type="text" placeholder="Berat Badan" style="padding: 12px 20px;" id="beratBadan"> Kg</td>
     </tr>
     <tr>
     <td><p><label>Tinggi Badan</label></p></td>
-    <td><input type="text"placeholder="Tinggi Badan" style="padding: 12px 20px;"> Cm</p></td>
+    <td><input type="text"placeholder="Tinggi Badan" style="padding: 12px 20px;" id="tinggiBadan"> Cm</p></td>
     </tr>
 </table>
     <h3> Silahkan pilih Gejala yang anda Rasakan</h3>
-    <p><input type="checkbox" id="Lemas" name="Lemas" value="Lemas">
+    <p><input type="checkbox" id="Lemas" name="Lemas" value="lemas" class="gejala">
     <label for="Lemas">Lemas</label>
-    <input type="checkbox" id="Sesak Nafas" name="Sesak Nafas" value="Sesak nafas">
+    <input type="checkbox" id="Sesak Nafas" name="Sesak Nafas" value="sesak nafas" class="gejala">
     <label for="Sesak nafas">Sesak Nafas</label>
-    <input type="checkbox" id="Ngilu" name="Ngilu" value="Ngilu"> 
+    <input type="checkbox" id="Ngilu" name="Ngilu" value="ngilu" class="gejala"> 
     <label for="Ngilu">Ngilu</label>
-    <input type="checkbox" id="demam" name="demam" value="Ngilu"> 
+    <input type="checkbox" id="demam" name="demam" value="demam" class="gejala"> 
     <label for="tidak enak badan1">Demam</label>
-    <input type="checkbox" id="mual" name="mual" value="Ngilu"> 
-    <label for="tidak enak badan1">mual</label><br>
-    <input type="checkbox" id="diare" name="diare" value="Ngilu"> 
+    <input type="checkbox" id="mual" name="mual" value="mual" class="gejala"> 
+    <label for="tidak enak badan1">Mual</label><br>
+    <input type="checkbox" id="diare" name="diare" value="diare" class="gejala"> 
     <label for="tidak enak badan1">Diare</label>
-    <input type="checkbox" id="Nyeri Otot" name="Nyeri Otot" value="Ngilu"> 
+    <input type="checkbox" id="Nyeri Otot" name="Nyeri Otot" value="nyeri otot" class="gejala"> 
     <label for="Nyeri Otot1">Nyeri Otot</label>
-    <input type="checkbox" id="Bantuk Kering" name="Bantuk Kering" value="Ngilu"> 
-    <label for="Bantuk Kering1">Bantuk Kering</label><br>
-    <input type="checkbox" id="gangguan pernafasan akut" name="gangguan pernafasan akut" value="Ngilu"> 
-    <label for="tidak enak badan1">gangguan pernafasan akut</label><br>
-    <input type="checkbox" id="tidak enak badan" name="tidak enak badan" value="Ngilu"> 
-    <label for="tidak enak badan1">tidak nafsu makan</label>
-    <input type="checkbox" id="tidak enak badan" name="tidak enak badan" value="Ngilu"> 
-    <label for="tidak enak badan1">sakit bagian</label>
-    <input type="checkbox" id="cairan di paru-paru" name="cairan di paru-paru" value="Ngilu"> 
-    <label for="tidak enak badan1">cairan di paru-paru</label><br></p>
-    <p><button type="button" id="reset" value="reset" class="button">Periksa</button></p>
+    <input type="checkbox" id="Batuk berdahak" name="Batuk berdahak" value="batuk berdahak" class="gejala"> 
+    <label for="Bantuk Kering1">Batuk berdahak</label><br>
+    <input type="checkbox" id="gangguan pernafasan akut" name="gangguan pernafasan akut" value="gangguan pernafasan akut" class="gejala"> 
+    <label for="tidak enak badan1">Gangguan pernafasan akut</label><br>
+    <input type="checkbox" id="tidak enak badan" name="tidak enak badan" value="tidak enak badan" class="gejala"> 
+    <label for="tidak enak badan1">Tidak enak badan</label>
+    <input type="checkbox" id="tidak nafsu makan" name="tidak nafsu makan" value="tidak nafsu makan" class="gejala"> 
+    <label for="tidak enak badan1">Tidak nafsu makan</label>
+    <input type="checkbox" id="hidung tersumbat" name="hidung tersumbat" value="hidung tersumbat" class="gejala"> 
+    <label for="tidak enak badan1">Hidung tersumbat</label><br></p>
+    <p><button type="button" id="reset" value="reset" class="button" onclick="showUs()">Periksa</button></p>
 </div>
     </div>
     <div id="kanan-box">
@@ -75,14 +75,14 @@
     <tr>
         <th><h3>Hasil Diagnosa Kami</h3></th>
     </tr>
-    <td><h3>Flu Berat</h3></td>
+    <td><h3 id="penyakit">Flu Berat</h3></td>
 </table>
 <table class="kanan-box">
     <tr>
         <th><h3>Resep Rekomendasi</h3></th>
     </tr>
     <tr>
-        <td><h3>Kunyit Merah direbus</h></td>
+        <td><h3 id="resep">Kunyit Merah direbus</h></td>
     </tr>
 </table>
 <div id="tombol-box">
@@ -91,5 +91,6 @@
     </div>
  </div>
 </div>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
