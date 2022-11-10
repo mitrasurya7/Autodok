@@ -192,10 +192,57 @@ function showUs(){
     document.getElementById('penyakit').innerHTML = hasilDiagnosa
     document.getElementById('resep').innerHTML = resep
 
+    
+    document.getElementById('nameDatang').innerHTML = `Selamat Datang, ${pasien.nama}!`
+    document.getElementById('umurHalo').innerHTML = `Umur: ${pasien.usia} tahun`
+    document.getElementById('bmi').innerHTML = `BMI Anda adalah:  ${calculateBEI(pasien.beratBadan,pasien.tinggiBadan)} `
 
     message += `BMI Anda adalah :  ${calculateBEI(pasien.beratBadan,pasien.tinggiBadan)} `
     message += `Hasil Diagnosa Anda : ${hasilDiagnosa} dan resep : ${resep}`
 
     console.log(pasien)
-    alert(message)
+    // alert(message)
+}
+
+var jamJanjiDokter = {}
+
+function masukListJanjiDokter(nama, value) {
+    if (value === 'jam1') {
+        jamJanjiDokter.jam = '09.00-10.00'
+    } else {
+        jamJanjiDokter.jam = '14.00-15.00'
+    }
+    jamJanjiDokter.dokter = nama
+}
+
+function janjiDokterCoki() {
+    masukListJanjiDokter('dr. Coki',document.getElementById('jambu').value)
+    console.log(jamJanjiDokter)
+
+    document.getElementById('namaDokter').innerHTML = jamJanjiDokter.dokter
+    document.getElementById('jamDokter').innerHTML = jamJanjiDokter.jam
+}
+
+function janjiDokterDustin() {
+    masukListJanjiDokter('dr. Dustin',document.getElementById('jambu1').value)
+    console.log(jamJanjiDokter)
+
+    document.getElementById('namaDokter').innerHTML = jamJanjiDokter.dokter
+    document.getElementById('jamDokter').innerHTML = jamJanjiDokter.jam
+}
+
+function janjiDokterTretan() {
+    masukListJanjiDokter('dr. Tretan',document.getElementById('jambu2').value)
+    console.log(jamJanjiDokter)
+
+    document.getElementById('namaDokter').innerHTML = jamJanjiDokter.dokter
+    document.getElementById('jamDokter').innerHTML = jamJanjiDokter.jam
+}
+
+function batalkanJanji() {
+    jamJanjiDokter.dokter = ''
+    jamJanjiDokter.jam = ''
+
+    document.getElementById('namaDokter').innerHTML = jamJanjiDokter.dokter
+    document.getElementById('jamDokter').innerHTML = jamJanjiDokter.jam
 }
