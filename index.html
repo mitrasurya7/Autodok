@@ -32,56 +32,56 @@
                         <td>
                             <p style="text-align: center" ;><label>Nama </label>
                         </td>
-                        <td><input type="text" placeholder="Masukan nama anda"></p>
+                        <td><input type="text" placeholder="Masukan nama anda" id="namaPasien"></p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p style="text-align: center" ;><label>Usia </label></p>
                         </td>
-                        <td><input type="text" placeholder="Masukan usia anda"></p>
+                        <td><input type="text" placeholder="Masukan usia anda"  id="usiaPasien"></p>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p><label>Berat Badan</label></p>
                         </td>
-                        <td><input type="text" placeholder="Berat Badan" style="padding: 12px 20px;"> Kg</td>
+                        <td><input type="text" placeholder="Berat Badan" style="padding: 12px 20px;" id="beratBadan"> Kg</td>
                     </tr>
                     <tr>
                         <td>
                             <p><label>Tinggi Badan</label></p>
                         </td>
-                        <td><input type="text" placeholder="Tinggi Badan" style="padding: 12px 20px;"> Cm</p>
+                        <td><input type="text" placeholder="Tinggi Badan" style="padding: 12px 20px;"  id="tinggiBadan"> Cm</p>
                         </td>
                     </tr>
                 </table>
                 <h3> Silahkan pilih Gejala yang anda Rasakan</h3>
-                <p><input type="checkbox" id="Lemas" name="Lemas" value="Lemas">
+                <p><input type="checkbox" id="Lemas" name="Lemas" value="lemas" class="gejala">
                     <label for="Lemas">Lemas</label>
-                    <input type="checkbox" id="Sesak Nafas" name="Sesak Nafas" value="Sesak nafas">
+                    <input type="checkbox" id="Sesak Nafas" name="Sesak Nafas" value="sesak nafas" class="gejala">
                     <label for="Sesak nafas">Sesak Nafas</label>
-                    <input type="checkbox" id="Ngilu" name="Ngilu" value="Ngilu">
+                    <input type="checkbox" id="Ngilu" name="Ngilu" value="ngilu" class="gejala"> 
                     <label for="Ngilu">Ngilu</label>
-                    <input type="checkbox" id="demam" name="demam" value="Ngilu">
+                    <input type="checkbox" id="demam" name="demam" value="demam" class="gejala"> 
                     <label for="tidak enak badan1">Demam</label>
-                    <input type="checkbox" id="mual" name="mual" value="Ngilu">
+                    <input type="checkbox" id="mual" name="mual" value="mual" class="gejala"> 
                     <label for="tidak enak badan1">Mual</label><br>
-                    <input type="checkbox" id="diare" name="diare" value="Ngilu">
+                    <input type="checkbox" id="diare" name="diare" value="diare" class="gejala"> 
                     <label for="tidak enak badan1">Diare</label>
-                    <input type="checkbox" id="Nyeri Otot" name="Nyeri Otot" value="Ngilu">
+                    <input type="checkbox" id="Nyeri Otot" name="Nyeri Otot" value="nyeri otot" class="gejala"> 
                     <label for="Nyeri Otot1">Nyeri Otot</label>
-                    <input type="checkbox" id="Bantuk Kering" name="Bantuk Kering" value="Ngilu">
-                    <label for="Bantuk Kering1">Bantuk Kering</label><br>
-                    <input type="checkbox" id="gangguan pernafasan akut" name="gangguan pernafasan akut" value="Ngilu">
+                    <input type="checkbox" id="Batuk berdahak" name="Batuk berdahak" value="batuk berdahak" class="gejala"> 
+                    <label for="Bantuk Kering1">Batuk berdahak</label><br>
+                    <input type="checkbox" id="gangguan pernafasan akut" name="gangguan pernafasan akut" value="gangguan pernafasan akut" class="gejala"> 
                     <label for="tidak enak badan1">Gangguan pernafasan akut</label><br>
-                    <input type="checkbox" id="tidak enak badan" name="tidak enak badan" value="Ngilu">
+                    <input type="checkbox" id="tidak enak badan" name="tidak enak badan" value="tidak enak badan" class="gejala"> 
+                    <label for="tidak enak badan1">Tidak enak badan</label>
+                    <input type="checkbox" id="tidak nafsu makan" name="tidak nafsu makan" value="tidak nafsu makan" class="gejala"> 
                     <label for="tidak enak badan1">Tidak nafsu makan</label>
-                    <input type="checkbox" id="tidak enak badan" name="tidak enak badan" value="Ngilu">
-                    <label for="tidak enak badan1">Sakit bagian</label>
-                    <input type="checkbox" id="cairan di paru-paru" name="cairan di paru-paru" value="Ngilu">
-                    <label for="tidak enak badan1">Cairan di paru-paru</label><br></p>
-                <p><button type="button" id="reset" value="reset" class="button">Periksa</button></p>
+                    <input type="checkbox" id="hidung tersumbat" name="hidung tersumbat" value="hidung tersumbat" class="gejala"> 
+                    <label for="tidak enak badan1">Hidung tersumbat</label><br></p>
+                    <p><button type="button" id="reset" value="reset" class="button" onclick="showUs()">Periksa</button></p>
             </div>
         </div>
         <div id="kanan-box">
@@ -97,7 +97,7 @@
                     </th>
                 </tr>
                 <td>
-                    <h3>Flu Berat</h3>
+                    <h3  id="penyakit">Flu Berat</h3>
                 </td>
             </table>
             <table class="kanan-box">
@@ -108,16 +108,18 @@
                 </tr>
                 <tr>
                     <td>
-                        <h3>Kunyit Merah direbus</h>
+                        <h3 id="resep" >Kunyit Merah direbus</h>
                     </td>
                 </tr>
             </table>
             <div id="tombol-box">
-                <button type="button" id="reset" value="reset" class="buttonDok"><a href="#aja" >Hubungi Dokter</a></button>
+                <!-- <button type="button" id="reset" value="reset" class="buttonDok"><a href="#aja" >Hubungi Dokter</a></button> -->
+                <button type="button" id="reset" value="reset" class="buttonDok">Hubungi Dokter</button>
                 <!-- <button type="button" id="reset" value="reset" class="button">Periksa</button> -->
             </div>
         </div>
     </div>
+ </div>
     <!-- Halaman 2 bos... jangan nanya2 -->
 </body>
 <body>
@@ -131,9 +133,9 @@
       </div>
         <nav class="artikel">
             <div class="keterangan">
-                <p style="text-align:center ;"><h1>Selamat datang Budiman</h1></p>
-                <div class="umur" id="aja"><p>umur : 12 tahun</p></div>
-                <div class="bin"><p style="text-align:center ;">Selamat BMI anda Normal</p></div>
+                <p style="text-align:center ;"><h1 id="nameDatang">Selamat datang Budiman</h1></p>
+                <div class="umur" id="umurHalo"><p>umur : 12 tahun</p></div>
+                <div class="bin"><p style="text-align:center ;" id="bmi">Selamat BMI anda Normal</p></div>
                 <div class="form">
                     <p>
                         <table border="1"width = "80%" style="background-color: white; border: 2px solid; padding: 5px; ">
@@ -234,6 +236,7 @@
         </nav>
     </div>
 </div>
+<script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
