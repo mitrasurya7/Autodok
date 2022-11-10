@@ -73,8 +73,8 @@ function gejalaPenyakit(listGejala,database){
         return false
     }
     let maxSymton = document.getElementsByClassName('gejala')
-    // console.log(maxSymton.length)
-    if(listGejala.length = maxSymton.length){
+    console.log(maxSymton.length)
+    if(listGejala.length === maxSymton.length){
         return 'Sangat Penyakitan'
     }
     // if(listGejala.length === do)
