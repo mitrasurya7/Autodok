@@ -1,3 +1,10 @@
+body
+{
+    position:absolute;
+    /* overflow-y: scroll; */
+    width: 100%;
+    overflow:hidden ;
+}
 .table{
     margin: 0;
 }
@@ -40,7 +47,7 @@ input[type=text] {
     width: 100%;
     padding: 0;
     /* background-position: center; */
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
 .tempat{
     width: 799px;
@@ -65,7 +72,7 @@ input[type=text] {
 #kanan-box{
     margin-left: 0;
     float:left;
-    width: 275px;
+    width: 279px;
     height: 800px;
     background-color:#749F82 ;   
     padding: 5px;
@@ -180,10 +187,11 @@ img{
     /*  halaman 2 bosss*/
     .pembuka {
         padding: 0;
-        /* margin: 
-        /* background-color: white; */
+        /* /* margin: * */
+         /* background-image: url(./images/bg.jpg);  */
         width: 100%;
         font-family: 'Poppins', sans-serif;
+        background-repeat: no-repeat;
     }
     .selamat {
         padding-top: 100px;
@@ -256,11 +264,14 @@ img{
         height: 400px;
     }
     .doksatu {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(214, 210, 210);
         height: 80%;
         width: 40%;
+        padding: 5px;
         border-radius: 10%;
         text-align: center;
+        border: 1px solid ;
+        box-shadow: 5px 5px #888888;
     }
     .doksatu img {
         width: 30%;
@@ -272,7 +283,7 @@ img{
     .doksatu p {
         height: 105px;
         display: flex;
-        padding-left: 30px;
+        padding-left: 20px;
     }
     .cekbok {
         display: flex;
@@ -294,11 +305,13 @@ img{
     }
     
     .dokdua {
-        background-color: rgb(255, 255, 255);
+        background-color:  rgb(214, 210, 210);
         width: 40%;
         height: 80% ;
         border-radius: 10%;
         text-align: center;
+        border: 1px solid ;
+        box-shadow: 5px 5px #888888;
     }
     .dokdua img {
         width: 30%;
@@ -340,11 +353,13 @@ img{
     }
     
     .persatu {
-        background-color:rgb(255, 255, 255);
+        background-color: rgb(214, 210, 210);
         height: 80%;
         width: 40%;
         text-align: center;
         border-radius: 10%;
+        border: 1px solid ;
+        box-shadow: 5px 5px #888888;
     }
     .persatu img {
         width: 30%;
@@ -378,11 +393,13 @@ img{
         list-style-type: none;
     }
     .perdua {
-        background-color:rgb(255, 255, 255);
+        background-color: rgb(214, 210, 210);
         height: 80%;
         width: 40%;
         text-align: center;
         border-radius: 10%;
+        border: 1px solid ;
+        box-shadow: 5px 5px #888888;
     }
     .perdua img {
         width: 30%;
@@ -405,14 +422,23 @@ img{
     }
     .kamunanyak {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: flex-end;
         padding-top: 10px;
-        padding-right: 15px;
+        padding-right: 120px;
         width: 88.8%;
         height: 50px;
     }
     .kamunanyak li {
         list-style-type: none;
+       
+    }
+    .kamunanyak li a {
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+    }
+    .kamunanyak li a:hover {
+        color: black;
     }
     
