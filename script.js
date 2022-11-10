@@ -69,6 +69,15 @@ function calculateBEI(bodyMass, bodyHeigth){
 
 function gejalaPenyakit(listGejala,database){
     let gejalaCounter = []
+    if(listGejala.length === 0){
+        return false
+    }
+    let maxSymton = document.getElementsByClassName('gejala')
+    // console.log(maxSymton.length)
+    if(listGejala.length = maxSymton.length){
+        return 'Sangat Penyakitan'
+    }
+    // if(listGejala.length === do)
     for(const penyakit in database){
         // database[penyakit].gejala
         // gejalaCounter.push([penyakit, calculateSameMember(listGejala,database[penyakit].gejala)]) 
@@ -82,16 +91,15 @@ function gejalaPenyakit(listGejala,database){
         if(gejalaCounter[gejalaPenyakit] > max){
             max = gejalaCounter[gejalaPenyakit]
             siPenyakit = gejalaPenyakit
-            sameValue = 0;
         } else if (gejalaCounter[gejalaPenyakit] === max && gejalaCounter[gejalaPenyakit] !== 0){
             sameValue = max
         }
     }
-    if(sameValue === 0){
+    if(sameValue !== max){
         return siPenyakit
     }
-    // console.log(siPenyakit)
-    // console.log(gejalaCounter)
+    console.log(siPenyakit)
+    console.log(gejalaCounter)
     return 'Harap kunjungi dokter' 
 }
 
@@ -142,9 +150,15 @@ function showUs(){
 
     let hasilDiagnosa;
     let resep;
-    if(diagnosisPenyakit === 'Harap kunjungi dokter'){
+    if(!diagnosisPenyakit){
+        hasilDiagnosa = 'Anda baik-baik saja.'
+        resep = 'Jaga kesehatan'
+    } else if(diagnosisPenyakit === 'Harap kunjungi dokter'){
         hasilDiagnosa = 'Anda menderita komplikasi'
         resep = 'Silahkan kunjungi dokter'
+    } else if(diagnosisPenyakit === 'Sangat Penyakitan'){
+        hasilDiagnosa = 'Anda sangat menderita'
+        resep = 'Mohon ikhlas'
     } else {
         hasilDiagnosa = diagnosisPenyakit
         resep = masterDataPenyakit[hasilDiagnosa].obat
